@@ -2,7 +2,7 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
  *
- * This program is free software; you can redistribute it and/or modify
+ * this program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
 */
@@ -21,10 +21,10 @@ static struct platform_device samsung_device_battery = {
 #endif
 
 static struct exynos_tmu_platform_data exynos5_tmu_data = {
-	.trigger_levels[0] = 70,
-	.trigger_levels[1] = 85,
-	.trigger_levels[2] = 105,
-	.trigger_levels[3] = 110,
+	.trigger_levels[0] = 65,
+	.trigger_levels[1] = 80,
+	.trigger_levels[2] = 100,
+	.trigger_levels[3] = 105,
 	.trigger_level0_en = 1,
 	.trigger_level1_en = 1,
 	.trigger_level2_en = 1,
@@ -36,19 +36,19 @@ static struct exynos_tmu_platform_data exynos5_tmu_data = {
 	.efuse_value = 55,
 	.freq_tab[0] = {
 		.freq_clip_max = 1800 * 1000,
-		.temp_level = 70,
+		.temp_level = 65,
 	},
 	.freq_tab[1] = {
 		.freq_clip_max = 1700 * 1000,
-		.temp_level = 85,
+		.temp_level = 80,
 	},
 	.freq_tab[2] = {
 		.freq_clip_max = 1200 * 1000,
-		.temp_level = 90,
+		.temp_level = 85,
 	},
 	.freq_tab[3] = {
 		.freq_clip_max = 600 * 1000,
-		.temp_level = 95,
+		.temp_level = 90,
 	},
 	.size[THERMAL_TRIP_ACTIVE] = 1,
 	.size[THERMAL_TRIP_PASSIVE] = 3,
